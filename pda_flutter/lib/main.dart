@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<String> btnNameList = ['입/출고', '재고 이동', '재고 확인', '기준 정보 등록'];
+  List<String> btnNameList = ['입/출고', '재고 이동', '재고 확인', '관리'];
 
   void _onButtonPressed(int idx) {
     if (idx == 2) {
@@ -46,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle buttonStyle = ElevatedButton.styleFrom(
-        textStyle: const TextStyle(fontSize: 23),
-        minimumSize: Size(200, 200),
+        textStyle: const TextStyle(fontSize: 20),
+        minimumSize: Size(150, 150),
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)));
     return Scaffold(
@@ -84,11 +84,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.chat),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: _incrementCounter,
+      //   tooltip: 'Increment',
+      //   child: const Icon(Icons.chat),
+      // ),
     );
   }
 }
