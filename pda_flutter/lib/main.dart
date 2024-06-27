@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pda_flutter/pages/check_item.dart';
+import 'package:pda_flutter/pages/check_items/check_item.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => CheckItem(title: btnNameList[idx])));
+              builder: (context) => CheckItemPage(title: btnNameList[2])));
     }
   }
 
